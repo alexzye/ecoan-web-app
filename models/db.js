@@ -6,13 +6,13 @@ var Sequelize = require("sequelize");
 
 // Database information
 // Gets the database information from environment variables
-var dbHost = process.env.DB_HOST;
-var dbName = process.env.DB_NAME;
-var dbPort = process.env.DB_PORT;
-var dbUser = process.env.DB_USER;
-var dbPass = process.env.DB_PASS;
+// var dbHost = process.env.DB_HOST;
+// var dbName = process.env.DB_NAME;
+// var dbPort = process.env.DB_PORT;
+// var dbUser = process.env.DB_USER;
+// var dbPass = process.env.DB_PASS;
 
-var dbLoginCred = 'mysql://' + dbUser + ':' + dbPass + '@' + dbHost + ':' + dbPort + '/' + dbName;
+var dbLoginCred = 'mysql://' + 'admin' + ':' + 'password' + '@' + '172.30.29.175' + ':' + '8080' + '/' + 'ecoan';
 
 var sequelize = new Sequelize(dbName, dbUser, dbPass,
   {
