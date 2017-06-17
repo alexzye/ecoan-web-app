@@ -14,9 +14,9 @@ var Sequelize = require("sequelize");
 
 var dbLoginCred = 'mysql://' + 'admin' + ':' + 'password' + '@' + '172.30.199.145' + ':' + '8080' + '/' + 'ecoan';
 
-var sequelize = new Sequelize(dbName, dbUser, dbPass,
+var sequelize = new Sequelize("ecoan", "admin", "password",
   {
-    host: dbHost,
+    host: "172.30.199.145",
     dialect: "mysql",
     define: {
       timestamps: false
