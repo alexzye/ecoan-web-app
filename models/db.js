@@ -12,7 +12,7 @@ var Sequelize = require("sequelize");
 // var dbUser = process.env.DB_USER;
 // var dbPass = process.env.DB_PASS;
 
-var dbLoginCred = 'mysql://' + 'admin' + ':' + 'password' + '@' + '172.30.29.175' + ':' + '8080' + '/' + 'ecoan';
+var dbLoginCred = 'mysql://' + 'admin' + ':' + 'password' + '@' + '172.30.199.145' + ':' + '8080' + '/' + 'ecoan';
 
 var sequelize = new Sequelize(dbName, dbUser, dbPass,
   {
